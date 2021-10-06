@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Scrips;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
     [SerializeField] private GameObject _highlighter;
+
+    private State currentInputState;
+    
     private GameObject _highlighted;
     void Update()
     {
